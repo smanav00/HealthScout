@@ -225,7 +225,7 @@ const Appointments = () => {
                       <div className="flex flex-row items-center justify-between w-[100px]">
                         <div>
                           <a
-                            href={item.report} // Assuming the report is stored as a URL
+                            href={item.report}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex text-blue-500"
