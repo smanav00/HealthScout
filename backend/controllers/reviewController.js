@@ -19,6 +19,7 @@ export const isServiceAvailed = async (req, res) => {
   const isBooked = Bookings.findOne({
     center: req.params.centerId,
     user: req.userId,
+    report: { $ne: "null" },
   });
 
   if (!isBooked) {
